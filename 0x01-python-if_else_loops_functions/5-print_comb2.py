@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print(', '.join(f'{number:02d}' for number in range(100)))
+print(', '.join('{:02d}'.format(number) for number in range(100)))
