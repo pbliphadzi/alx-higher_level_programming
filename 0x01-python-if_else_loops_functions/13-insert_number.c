@@ -21,7 +21,8 @@ listint_t *insert_node(listint_t **head, int number) {
         return new;
     }
     
-    listint_t *current = *head;
+    listint_t *current
+    current = *head;
     while (current->next != NULL && current->next->n < number) {
         current = current->next;
     }
@@ -31,7 +32,7 @@ listint_t *insert_node(listint_t **head, int number) {
     return new;
 }
 
-void print_list(listint_t *head) {
+void free_listint(listint_t *head) {
     listint_t *current = head;
     while (current != NULL) {
         printf("%d -> ", current->n);
