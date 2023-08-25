@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from itertools import combinations
 
 for digit1, digit2 in combinations(range(10), 2):
