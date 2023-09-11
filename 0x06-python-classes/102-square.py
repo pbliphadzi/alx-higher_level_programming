@@ -5,7 +5,7 @@
 class Square:
     """Square class with properties and methods."""
     def __init__(self, size=0):
-        self.size = size  # Using the property setter to validate size
+        self.size = size  
 
     @property
     def size(self):
